@@ -12,7 +12,7 @@ macro$max.vv <- -1 # max vversion for previous pull
 
 ## Source ----------------------------------------------------------------------
 
-source(paste0(macro$path, "vsurvey check/source/01.Setup.R"))
+source(paste0(macro$path, "vsurvey/source/01.Setup.R"))
 
 ## Update Dictionary before running
-source(paste0(macro$path, "vsurvey check/source/02.Output.R"))
+source(paste0(macro$path, "vsurvey/source/02.Output.R"))

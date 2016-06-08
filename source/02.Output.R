@@ -2,7 +2,7 @@
 
 ## Import Dictionary
 dictionary <-
-    read.csv(paste0(macro$path, "vsurvey check/output/dictionary.csv"))
+    read.csv(paste0(macro$path, "vsurvey/output/dictionary.csv"))
 
 ## Pre-Format
 vversion <-
@@ -15,7 +15,7 @@ if (macro$ppull) {
     
     # import previous data
     old <-
-        read.csv(paste0(macro$path, "vsurvey check/output/vlist.vversion.csv"), 
+        read.csv(paste0(macro$path, "vsurvey/output/vlist.vversion.csv"), 
                  stringsAsFactors = F)
     
     # check if variables were added
@@ -66,10 +66,10 @@ output <-
 ## Export ----------------------------------------------------------------------
 
 write.csv(vversion, 
-          paste0(macro$path, "vsurvey check/output/vlist.vversion.csv"), 
+          paste0(macro$path, "vsurvey/output/vlist.vversion.csv"), 
           row.names = FALSE)
 
-write.csv(output, paste0(macro$path, "vsurvey check/output/vsurvey.csv"), row.names = FALSE)
+write.csv(output, paste0(macro$path, "vsurvey/output/vsurvey.csv"), row.names = FALSE)
 
 
 ## Removal ---------------------------------------------------------------------

@@ -13,7 +13,7 @@ sourceDir <- function(path, trace = TRUE, ...) {
     }
 }
 
-sourceDir(paste0(macro$path, "vsurvey check/functions"))
+sourceDir(paste0(macro$path, "vsurvey/functions"))
 
 
 ## Import Survey Data ----------------------------------------------------------
@@ -61,9 +61,11 @@ dictionary <-
 
 
 ## Export ----------------------------------------------------------------------
-write.csv(dictionary, paste0(macro$path, "vsurvey check/output/dictionary.csv"), 
+
+write.csv(dictionary, paste0(macro$path, "vsurvey/output/dictionary.csv"), 
           row.names = F)
 
 
 ## Removal ---------------------------------------------------------------------
+
 rm(dictionary, dat, formats, vars)
